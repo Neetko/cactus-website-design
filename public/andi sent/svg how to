@@ -1,0 +1,42 @@
+If you want the blob bigger
+Change:
+
+w-[118vw]
+sm:w-[114vw]
+lg:w-[108vw]
+xl:w-[104vw]
+Bigger values = bigger blob footprint.
+
+Example:
+
+w-[130vw] makes it much larger.
+
+If you want it further right
+Change:
+
+translate-x-[10vw]
+sm:translate-x-[11vw]
+lg:translate-x-[12vw]
+xl:translate-x-[13vw]
+Bigger values = further right.
+
+If you want it higher or lower
+Change the outer wrapper:
+
+top-24
+sm:top-28
+lg:top-24
+Larger top value = lower on screen.
+
+If you want the glow moved
+Change:
+
+left-[24%]
+right-[-8%]
+right-[4%]
+top-[12%]
+If you want softer/stronger glow
+Change:
+
+bg-[#d7b794]/20 → opacity
+blur-3xl / blur-xl → blur amount
