@@ -22,12 +22,33 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Kaktusi Macan',
-  description: 'Lokalni, obiteljski rasadnik kaktusa .',
-  generator: 'v0.app',
+  metadataBase: new URL('https://cactus-website-design.vercel.app'),
+  title: 'Kaktusi Macan — obiteljski rasadnik kaktusa',
+  description: 'Lokalni, obiteljski rasadnik kaktusa iz Pule.',
   icons: {
     icon: '/images/logo-nogb.png',
     apple: '/images/logo-nogb.png',
+  },
+  openGraph: {
+    title: 'Kaktusi Macan — obiteljski rasadnik kaktusa',
+    description: 'Lokalni, obiteljski rasadnik kaktusa iz Pule.',
+    url: '/',
+    siteName: 'Kaktusi Macan',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero-couple.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Kaktusi Macan — obiteljski rasadnik kaktusa',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kaktusi Macan — obiteljski rasadnik kaktusa',
+    description: 'Lokalni, obiteljski rasadnik kaktusa iz Pule.',
+    images: ['/images/hero-couple.jpg'],
   },
 }
 

@@ -378,7 +378,7 @@ export default function Home() {
                 <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-primary/58">osobni odabir u rasadniku</p>
                 <p className="mt-4 font-display text-2xl text-primary">Razgledajte i odaberite biljku uživo.</p>
                 <p className="mt-3 text-sm leading-7 text-foreground/72">
-                  Odaberite sorte koje najbolje odgovaraju vašem prostoru i kolekciji.
+                  Odaberite sorte koje najbolje odgovaraju vašem prostoru.
                 </p>
               </div>
             </div>
