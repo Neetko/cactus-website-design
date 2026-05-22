@@ -164,7 +164,7 @@ export function CactusSaleCarousel() {
           {cactusShowcase.map((item) => (
             <CarouselItem
               key={item.slug}
-              className="basis-[86%] sm:basis-[58%] lg:basis-[45%] xl:basis-[33.2%]"
+              className="basis-[97%] sm:basis-[78%] lg:basis-[45%] xl:basis-[33.2%]"
             >
               <Card className="h-full overflow-hidden rounded-[2.3rem] border-white/70 bg-white py-0 shadow-[0_28px_80px_-48px_rgba(44,61,45,0.45)]">
                 <div className={`relative aspect-4/5 overflow-hidden bg-linear-to-br ${item.accent}`}>
@@ -173,7 +173,7 @@ export function CactusSaleCarousel() {
                     alt={item.title}
                     fill
                     className="object-cover transition duration-500 hover:scale-[1.03]"
-                    sizes="(max-width: 640px) 86vw, (max-width: 1024px) 58vw, (max-width: 1280px) 45vw, 33.2vw"
+                    sizes="(max-width: 640px) 97vw, (max-width: 1024px) 78vw, (max-width: 1280px) 45vw, 33.2vw"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-28 bg-linear-to-t from-black/20 via-black/0 to-transparent" />
                   <Badge className="absolute left-5 top-5 rounded-full border border-white/55 bg-white/86 px-3 py-1 text-[0.68rem] uppercase tracking-[0.26em] text-primary shadow-none">

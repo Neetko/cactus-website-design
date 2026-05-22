@@ -56,18 +56,18 @@ const processSteps: Array<{
 }> = [
   {
     icon: Flower2,
-    title: "Od sjemena do zrelog primjerka",
-    description: "Biljke uzgajamo godinama, od vlastitog sjemena do trenutka kad su spremne za prodaju.",
+    title: "Od hobija do SOPG-a",
+    description: "Priča je počela od nekoliko dobivenih biljaka i prerasla u obiteljski posao koji donosi mir, radost i puno strpljenja.",
   },
   {
     icon: Phone,
-    title: "Pakiranje i aranžmani po dogovoru",
-    description: "Za poklone, kolekcije i posebne odabire pripremamo pakiranje i aranžmane prema potrebi.",
+    title: "Kolekcija koja broji više od 1000 vrsta",
+    description: "Obilazak sajmova, literatura i dugogodišnje učenje pomogli su nam oblikovati zavidnu zbirku kaktusa i sukulenata.",
   },
   {
     icon: Truck,
-    title: "Kupnja kod nas, uz osoban razgovor",
-    description: "Ne dostavljamo — biljke se biraju i preuzimaju kod nas, uz savjet i dogovor na licu mjesta.",
+    title: "Sjeme, mladice i zimsko mirovanje",
+    description: "Uzgajamo iz vlastitog sjemena i mladica, u prozračnom supstratu koji sami pripremamo, uz mirovanje od listopada do ožujka.",
   },
 ];
 
@@ -271,25 +271,28 @@ export default function Home() {
       <section id="proces" className="relative overflow-hidden section-space bg-primary text-primary-foreground">
         <div className="shell relative grid gap-12 pb-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:pb-8">
           <div>
-            <p className="text-[0.72rem] font-medium uppercase tracking-[0.32em] text-primary-foreground/60">kako radimo</p>
+            <p className="text-[0.72rem] font-medium uppercase tracking-[0.32em] text-primary-foreground/60">kako uzgajamo</p>
             <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.02] tracking-[-0.03em] text-primary-foreground sm:text-5xl">
-              Od sjemena do odabira u rasadniku, svaki korak ostaje pažljiv i osoban.
+              Iz nekoliko prvih biljaka razvila se obiteljska kolekcija koja raste strpljivo i s puno pažnje.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-8 text-primary-foreground/74 sm:text-lg">
-              Kad kupujete od nas, ne dobivate samo biljku. Dobivate i priču o njezinu uzgoju, savjet za njegu
-              i mogućnost da je odaberete osobno, izravno u našem prostoru.
+              SOPG Kaktusi Macan nastao je iz želje da viškove iz naših plastenika u južnoj Istri, u Muntiću,
+              ponudimo ljubiteljima bodljikavih i mesnatih biljaka. Danas uzgajamo kaktuse i sukulente iz vlastitog
+              sjemena, mladica i pažljivo pripremljenih supstrata.
             </p>
 
             <div className="mt-8 rounded-[2.4rem] border border-white/12 bg-white/7 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-              <p className="font-display text-3xl text-[#f2d3b7]">“Najljepši dio kupnje je trenutak kada kaktus vidite uživo, među biljkama iz kojih je i nastao.”</p>
-              <p className="mt-4 text-sm uppercase tracking-[0.3em] text-primary-foreground/55">obitelj kaktusi macan</p>
+              <p className="font-display text-3xl text-[#f2d3b7]">
+                “Ljepota oblika i boja ovih biljaka neiscrpna je i nepredvidiva — svaki novi cvijet donosi novu radost.”
+              </p>
+              <p className="mt-4 text-sm uppercase tracking-[0.3em] text-primary-foreground/55">predstavljanje sopg kaktusi macan</p>
             </div>
           </div>
 
           <div className="grid gap-5">
             {processSteps.map((step, index) => (
-              <article key={step.title} className="flex gap-5 rounded-4xl border border-white/12 bg-white/6 p-6 backdrop-blur-sm">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#d7b794] text-primary">
+              <article key={step.title} className="flex flex-col gap-4 rounded-4xl border border-white/12 bg-white/6 p-6 backdrop-blur-sm">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#d7b794] text-primary">
                   <step.icon className="h-5 w-5" />
                 </div>
                 <div>
@@ -324,7 +327,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute left-1 top-110 translate-y-12 opacity-100 sm:left-10 sm:translate-y-14 lg:left-18 lg:translate-y-16">
+          <div className="pointer-events-none absolute left-1 top-130 hidden translate-y-12 opacity-100 sm:left-10 sm:block sm:translate-y-14 lg:left-30 lg:translate-y-16">
             <Image
               src="/images/minibigcactus2.svg"
               alt=""
@@ -374,7 +377,14 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute inset-x-7 bottom-7 rounded-[1.8rem] border border-white/55 bg-white/78 p-6 backdrop-blur">
+              <div className="mt-4 rounded-[1.8rem] border border-primary/10 bg-[#fbf7f1] p-5 sm:hidden">
+                <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-primary/58">osobni odabir u rasadniku</p>
+                <p className="mt-3 font-display text-xl text-primary">Razgledajte i odaberite biljku uživo.</p>
+                <p className="mt-2 text-sm leading-7 text-foreground/72">
+                  Odaberite sorte koje najbolje odgovaraju vašem prostoru.
+                </p>
+              </div>
+              <div className="absolute inset-x-7 bottom-7 hidden rounded-[1.8rem] border border-white/55 bg-white/78 p-6 backdrop-blur sm:block">
                 <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-primary/58">osobni odabir u rasadniku</p>
                 <p className="mt-4 font-display text-2xl text-primary">Razgledajte i odaberite biljku uživo.</p>
                 <p className="mt-3 text-sm leading-7 text-foreground/72">
