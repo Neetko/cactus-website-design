@@ -22,8 +22,8 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Kaktusi Dalmacija — obiteljski uzgoj kaktusa',
-  description: 'Svježe redizajnirana landing stranica za lokalni, obiteljski rasadnik kaktusa iz Dalmacije.',
+  title: 'Kaktusi Macan',
+  description: 'Lokalni, obiteljski rasadnik kaktusa .',
   generator: 'v0.app',
   icons: {
     icon: '/images/logo-nogb.png',
